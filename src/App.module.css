@@ -1,0 +1,48 @@
+.grid_body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "header header"
+  "content content"
+  "footer footer"
+}
+
+.header{
+  grid-area: header;
+  position: fixed;
+  z-index: 1000;
+  background-color: azure;
+  width: 100vw;
+}
+.content{
+  grid-area: content;
+  background-color: #444;
+  height: 100vh;
+
+}
+
+.footer{
+  display: none;
+  grid-area: footer;
+  background-color: #222;
+ 
+
+}
+.menu, .menu2{
+  position: absolute;
+  display: grid;
+  width: 0;
+  height: 100vh;
+  background-color: #fff;
+  color: #333;
+  z-index: 10000;
+  /* display: none; */
+}
+.menu2{
+  background-color: #333;
+}
+
+.MainPage_button{
+  z-index: 20000;
+  position:absolute;
+}

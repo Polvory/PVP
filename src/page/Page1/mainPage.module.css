@@ -1,0 +1,51 @@
+
+.MainPage_Parent_grid{
+    display: grid; 
+    height: 100vh; 
+    
+    justify-items : center;
+    align-items: start;
+    grid-template-areas: 
+    "HelloUser"
+   
+    ;
+}
+
+
+.MainPage_HelloUser_grid{
+    grid-area: HelloUser;
+    margin-top: 10em;
+    color: azure;
+    display: grid;
+    padding: 1em;
+    grid-template-areas: 
+    "UserAvatar"
+    "UserName"
+    ;
+}
+
+.MainPage_UserAvatar{
+    grid-area: UserAvatar;
+    justify-self: center;
+    align-self : center;
+    
+}
+.MainPage_UserName{
+    justify-self: center;
+    align-self : center;
+    text-align: center;
+
+
+}
+.MainPage_UserName > h1{
+    color: white !important;
+} 
+.MainPage_button{
+    color: #333;
+    cursor: pointer;
+}
+
+.UserAvatarImg{
+    box-shadow: 0px 4px 17px rgba(35, 35, 35, 0.25) !important;
+  
+}
